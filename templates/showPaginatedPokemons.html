@@ -1,0 +1,11 @@
+<div ng-controller="pokemonsPaginatedList" class="container-fluid d-flex justify-content-center my-5">
+    <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div ng-repeat="pokemon in pokemons" class="card col">
+            <img src="{{ pokemon.imageUrl }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ pokemon.name }} </h5>
+              <a href="/#!/{{ pokemon.id }}" class="btn btn-primary">Plus d'informations</a>
+            </div>
+          </div>
+    </div>
+</div>
